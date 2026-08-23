@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>Explore beautiful images</p>
+    </header>
+    <main>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Nature">Nature</button>
+            <button class="filter-btn" data-filter="Animals">Animals</button>
+            <button class="filter-btn" data-filter="Spiderman">Spiderman</button>
+            <button class="filter-btn" data-filter="Car">Car</button>
+            <button class="filter-btn" data-filter="Flowers">Flowers</button>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item" data-category="Car">
+                <img src="https://plus.unsplash.com/premium_photo-1737182592549-0c83f93e2903?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwY2FyfGVufDB8fDB8fHww" alt="Car"/>
+            </div>
+            <div class="gallery-item" data-category="Nature">
+                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" alt="Nature"/>
+            </div>
+            <div class="gallery-item" data-category="Spiderman">
+                <img src="https://wallpapercat.com/w/full/b/e/7/5819275-3840x2160-desktop-hd-pc-background.jpg" alt="Spiderman"/>
+            </div>
+            <div class="gallery-item" data-category="Animals">
+                <img src="https://cdn.wallpapersafari.com/75/57/stHwqR.jpg" alt="Animals"/>
+            </div>
+            <div class="gallery-item" data-category="Flowers">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRGjBMhuVTi1tLa9P7zngF2LfDnUeMMF9MLSwwSHz5avlu9AXktNyXxxs&s=10" alt="Flowers"/>
+            </div>
+            <div class="gallery-item" data-category="Flowers">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/068/344/012/small/purple-flowers-in-the-rain-a-beautiful-spring-scene-photo.jpg" alt="Flowers"/>
+            </div>
+            <div class="gallery-item" data-category="Animals">
+                <img src="https://t4.ftcdn.net/jpg/07/85/88/83/360_F_785888323_UH0MVFCUdOka7kTCnyyDTtUxIUGH5Zpf.jpg"alt="Animals"/>
+            </div>
+            <div class="gallery-item" data-category="Animals">
+                <img src=https://images.unsplash.com/photo-1517486430290-35657bdcef51?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBhbmltYWxzfGVufDB8fDB8fHww" alt="Animals"/>
+                
+            </div>
+            <!--
+            <div class="gallery-item" data-category="Animals">
+                <img src="" alt="Animals"/>
+            </div>
+            -->
+            <div class="gallery-item" data-category="Animals">
+                <img src="https://img.magnific.com/free-photo/view-black-panther-nature_23-2150460903.jpg?semt=ais_test_b&w=740&q=80" alt="Animals"/>
+            </div>
+            <div class="gallery-item" data-category="Spiderman">
+                <img src="https://4kwallpapers.com/images/wallpapers/marvels-spider-man-2560x2560-13495.jpg" alt="Spierman"/>
+            </div>
+            <div class="gallery-item" data-category="Car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTivjg8uLttmI1pdr9zw-cttT8srZSPskUTuOmbnnxBfDAFip1x__5QYz6&s=10" alt="Car"/>
+            </div>
+            <div class="gallery-item" data-category="Car">
+                <img src="https://cdn-s3.autocarindia.com/Mercedes/cla-electric/Mercedes-Benz_CLA_EV_Front_Quarter_Tracking.jpg?w=728&q=75&fm=auto" alt="Car"/>
+            </div>
+            <div class="gallery-item" data-category="Nature">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/049/855/296/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="Nature"/>
+            </div>
+            <div class="gallery-item" data-category="Nature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSwRHgONzy5Kh1V3_3wUTn9dPqNww-egjEpuauzyjm2b5mXuDDaQNh8dYK&s=10" alt="Nature"/>
+            </div>
+            <div class="gallery-item" data-category="Nature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7CBJorho6YGePkRtqPY5gj9l2RwFyfdqGTNlddvpwwLiN5b6RyrkbjMJo&s=10" alt="Nature"/>
+            </div>
+            <div class="gallery-item" data-category="Nature">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1280px-Altja_j%C3%B5gi_Lahemaal.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Nature"/>
+            </div>
+            <div class="gallery-item" data-category="Spiderman">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/msm2-reveal-attack-4k-legal-65284680c18ba.jpg?crop=0.490xw:0.872xh;0.115xw,0&resize=1120:*" alt="Spiderman"/>
+            </div>
+            <div class="gallery-item" data-category="Spiderman">
+                <img src="https://i.pinimg.com/originals/ae/61/f2/ae61f26f3211941741e442e8ec54a35f.jpg" alt="Spiderman"/>
+            </div>
+            <div class="gallery-item" data-category="Car">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" alt="Car"/>
+            </div>
+            <div class="gallery-item" data-category="Spiderman">
+                <img src="https://staticprintenglish.theprint.in/wp-content/uploads/2026/06/Spiderman-696x392.png?compress=true&quality=80&w=376&dpr=2.6" alt="Spiderman"/>
+            </div>
+            <div class="gallery-item" data-category="Spiderman">
+                <img src="https://media.vanityfair.com/photos/5d5dacc363a3160008e3a190/master/w_2560%2Cc_limit/spiderman-marvel.jpg" alt="Spiderman"/>
+            </div>
+            <div class="gallery-item" data-category="Nature">
+                <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-shivanasamudra-falls-mysuru-karnataka-blog-ntr-hero?qlt=82&ts=1742169746720" alt="Nature"/>
+            </div>
+            <div class="gallery-item" data-category="Nature">
+                <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/z/u/Zugpsitze_mountain.jpg?crop=0%2C176%2C3008%2C1654&wid=1300&hei=715&scl=2.313846153846154" alt="Nature"/>
+            </div>
+            <div class="gallery-item" data-category="Animals">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbOfVPkc0Ws94hHiSorovU0JHNaMX8Z2AWG7G5Cf-SQ9VcHrzi5bEyDNs&s=10" alt="Animals"/>
+            </div>
+            <div class="gallery-item" data-category="Animals">
+                <img src="https://d1jyxxz9imt9yb.cloudfront.net/medialib/4350/image/s768x1300/AdobeStock_123823873_433578_reduced.jpg" alt="Animals"/>
+            </div>
+            <div class="gallery-item" data-category="Animals">
+                <img src="https://cdn.britannica.com/94/494-050-A674AD3A/Fallow-deer-dama-dama.jpg" alt="Animals"/>
+            </div>
+            <div class="gallery-item" data-category="Flowers">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjdPdFP3FCgib9qgITxSOIakb51GU6LBexWKggZLwjnmXyWJ3T0kjMXy_H&s=10" alt="Flowers"/>
+            </div>
+            <div class="gallery-item" data-category="Flowers">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/dahlia-1508785047.jpg?crop=1.00xw:0.669xh;0,0.0136xh" alt="Flowers"/>
+            </div>
+            <div class="gallery-item" data-category="Flowers">
+                <img src="https://www.thespruce.com/thmb/c3znkzZgMeuvzBy4wH13jVllfUo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/plants-with-big-flowers-4138211-hero-b10becb169064cc4b3c7967adc1b22e1.jpg" alt="Flowers"/>
+            </div>
+            <div class="gallery-item" data-category="Flowers">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLdnntJNzGgebaOZp1Tunbn3FgGzuxaG2FIm-UKNs1un9fo9lrFWlrCaA&s=10" alt="Flowers"/>
+            </div>
+            <div class="gallery-item" data-category="Car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ__4RN5yYcNrMdlwrPkvz1TJj_g4LmydGIuS2kQoXfu3GHN62cpeiZBZU&s=10" alt="Car"/>
+            </div>
+            <div class="gallery-item" data-category="Car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwhiCaXazL_6ohwDGDUdin6uhHbKuO1S3_p5r7RGteo9Gg4fejR33RmIy4&s=10" alt="Car"/>
+            </div>
+            <div class="gallery-item" data-category="Car">
+                <img src="https://awesomewallpapersblog.com/wp-content/uploads/2014/01/wallpaper-2304148.jpg" alt="Car"/>
+            </div>
+            <div class="gallery-item" data-category="Flowers">
+                <img src="https://hanablogs.azurewebsites.net/Content/BlogUpload/202503250718271323.png" alt="Flowers"/>
+            </div>
+            <div class="gallery-item" data-category="Flowers">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT74cSpX8cVEmjPr1NCi0m8R4MP50ZvnIyhLVGlNMq6fpTMH5tvIA-5GeVW&s=10" alt="Flowers"/>
+            </div>
+            <div class="gallery-item" data-category="Flowers">
+                <img src="https://cdn.shopify.com/s/files/1/0267/2384/4271/files/lily-290852_1280.jpg?v=1738930433" alt="Flowers"/>
+            </div>
+            <div class="gallery-item" data-category="Car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXhge3A6ErW44ymbd0NKiy9PNMNPnDIujuKHzSXviJwpJaXblXWEQql1TR&s=10" alt="Car"/>
+            </div>
+            <div class="gallery-item" data-category="Car">
+                <img src="https://4kwallpapers.com/images/walls/thumbs/26929.jpg" alt="Car"/>
+            </div>
+            <div class="gallery-item" data-category="Spiderman">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFF6dfRxX-E4Tzl55WKWWflWoOxvPw-CMoCpcBsz7m5E_lzCu6rASc9Sxa&s=10" alt="Spiderman"/>
+            </div>
+            <div class="gallery-item" data-category="Nature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfxt_EhrABAxln7uXEqfPM66nfS-y1qMPoetQjGgVpkeyJC25dYpJVV38a&s=10" alt="Nature"/>
+            </div>
+            <div class="gallery-item" data-category="Animals">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2LiLxucAWTJ84oj5AoquT1sHrsmBdps_If3bfelyIIxvF3wPgjYjc5V0&s=10" alt="Animals"/>
+            </div>
+        </div>
+    </main>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close" id="closeBtn">&times;</button>
+
+        <button class="nav prev" id="prevBtn">&#10094;</button>
+
+        <img id="lightboxImg" src="" alt="Selected Image">
+
+        <button class="nav next" id="nextBtn">&#10095;</button>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
